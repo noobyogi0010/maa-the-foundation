@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Movement Against Anpadhta (MAA) - The Foundation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here lies the mortal remains (or official codebase) of **MAA - The Foundation**'s official website.
 
-## Available Scripts
+**MAA-The Foundation** is a non-profit organization founded and run by Mr. Ankit Ranga (Certified Yoga Instructor). The mission of **MAA - The Foundation** is to provide literacy to the under-previlaged children. This mission is not only limited to teaching children how to read, and write but also to make sure that they understand different aspects of life. For Mr. Ranga, the concept of literacy is much more beyond it's literal meaning. He along with is team are teaching these children to success in life and lead a happy, hygenic and healthy lifestyle.
 
-In the project directory, you can run:
+If you want to become a part of this cause and want to learn more about the hows, whats, whens and wheres then please reach out at - `maathefoundation@gmail.com` 
 
-### `yarn start`
+## FYI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Work for this website  is still under progress. So, please keep calm and wait for awesomeness.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project Setup
 
-### `yarn test`
+1. Install all the required packages using the following command:
+    
+    `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Start the project by running the following command:
+    
+    `npm run start`
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Learn More About MAA - The Foundation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can learn more at [MAA - The Foundation](#).
