@@ -4,9 +4,9 @@ import './navbar.css';
 function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);  
     return (
-        <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-yellow-100 mb-3">
-          <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <nav className="relative flex flex-wrap items-center justify-between bg-yellow-100">
+          <div className="container mx-auto flex flex-wrap items-center justify-between">
+            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-10">
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
                 href="#home"
@@ -32,8 +32,8 @@ function Navbar() {
             </div>
             <div
               className={
-                "lg:flex flex-grow items-center" + 
-                (navbarOpen ? " flex" : " hidden")
+                "lg:flex items-center bg-yellow-300 px-4 md:px-10 py-4  w-2/4" + 
+                (navbarOpen ? " flex flex-grow justify-center " : " hidden justify-end")
               }
               id="navbar-danger"
             >
@@ -51,7 +51,7 @@ function Navbar() {
                     className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#tweet"
                   >
-                    <span className="ml-2">Contact</span>
+                    <span className="ml-2">Contact Us</span>
                   </a>
                 </li>
                 <li className="nav-item">
