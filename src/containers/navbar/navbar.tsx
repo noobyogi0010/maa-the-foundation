@@ -56,7 +56,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a 
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
                     href="#pin"
                   >
                     <span className="ml-2">
