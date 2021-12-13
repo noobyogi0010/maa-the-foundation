@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <nav className="relative flex flex-wrap items-center justify-between bg-yellow-100">
           <div className="container mx-auto flex flex-wrap items-center justify-between">
-            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-10">
+            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8">
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
                 href="#home"
@@ -32,7 +32,7 @@ function Navbar() {
             </div>
             <div
               className={
-                "lg:flex items-center bg-yellow-300 px-4 md:px-10 py-4  w-2/4" + 
+                "lg:flex items-center bg-yellow-300 px-4 md:px-14 w-2/4 md:py-8" + 
                 (navbarOpen ? " flex flex-grow justify-center " : " hidden justify-end")
               }
               id="navbar-danger"
@@ -40,7 +40,7 @@ function Navbar() {
               <ul className="flex items-center flex-col lg:flex-row list-none lg:ml-auto">
                 <li className="nav-item">
                   <a 
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
                     <span className="ml-2">About Us</span>
@@ -48,7 +48,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a 
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#tweet"
                   >
                     <span className="ml-2">Contact Us</span>
@@ -56,7 +56,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a 
-                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
+                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
                     href="#pin"
                   >
                     <span className="ml-2">
