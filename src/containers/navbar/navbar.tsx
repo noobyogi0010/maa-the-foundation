@@ -1,12 +1,19 @@
 import React from 'react';
 import './navbar.css';
 
-function Navbar() {
+type NavbarProps = {
+  props: {
+    atPageTop: boolean;
+  };
+};
+
+function Navbar(props: NavbarProps) {
+    // const [atPageTop, setAtPageTop] = React.useState(props);
     const [navbarOpen, setNavbarOpen] = React.useState(false);  
     return (
-        <nav className="relative flex flex-wrap items-center justify-between bg-yellow-100">
+        <nav className={"relative flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 lg:z-50 " + (!props.props.atPageTop ? 'lg:border-b-2 lg:border-black' : "")}>
           <div className="container mx-auto flex flex-wrap items-center justify-between">
-            <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8">
+            <div className={"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8 " + (navbarOpen ? "border-b-2 border-black lg:border-none" : "")}>
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
                 href="#home"
@@ -40,7 +47,7 @@ function Navbar() {
               <ul className="flex items-center flex-col lg:flex-row list-none lg:ml-auto">
                 <li className="nav-item">
                   <a 
-                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
                     <span className="ml-2">About Us</span>
@@ -48,7 +55,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a 
-                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#tweet"
                   >
                     <span className="ml-2">Contact Us</span>
@@ -56,7 +63,7 @@ function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a 
-                    className="pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
+                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
                     href="#pin"
                   >
                     <span className="ml-2">
