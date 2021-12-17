@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/maa-the-foundation/static/css/main.835c8865.chunk.css",
+    "main.js": "/maa-the-foundation/static/js/main.6bc9799d.chunk.js",
+    "main.js.map": "/maa-the-foundation/static/js/main.6bc9799d.chunk.js.map",
+    "runtime-main.js": "/maa-the-foundation/static/js/runtime-main.4c6b05b9.js",
+    "runtime-main.js.map": "/maa-the-foundation/static/js/runtime-main.4c6b05b9.js.map",
+    "static/js/2.d6a4b075.chunk.js": "/maa-the-foundation/static/js/2.d6a4b075.chunk.js",
+    "static/js/2.d6a4b075.chunk.js.map": "/maa-the-foundation/static/js/2.d6a4b075.chunk.js.map",
+    "static/js/3.024e7ee2.chunk.js": "/maa-the-foundation/static/js/3.024e7ee2.chunk.js",
+    "static/js/3.024e7ee2.chunk.js.map": "/maa-the-foundation/static/js/3.024e7ee2.chunk.js.map",
+    "index.html": "/maa-the-foundation/index.html",
+    "static/css/main.835c8865.chunk.css.map": "/maa-the-foundation/static/css/main.835c8865.chunk.css.map",
+    "static/js/2.d6a4b075.chunk.js.LICENSE.txt": "/maa-the-foundation/static/js/2.d6a4b075.chunk.js.LICENSE.txt",
+    "static/media/header.386021cc.jpg": "/maa-the-foundation/static/media/header.386021cc.jpg",
+    "static/media/img2.2a0d4c6d.jpg": "/maa-the-foundation/static/media/img2.2a0d4c6d.jpg",
+    "static/media/img3.3dfe3011.jpg": "/maa-the-foundation/static/media/img3.3dfe3011.jpg",
+    "static/media/img4.e0c428a9.jpg": "/maa-the-foundation/static/media/img4.e0c428a9.jpg",
+    "static/media/team1.46a6abcf.jpg": "/maa-the-foundation/static/media/team1.46a6abcf.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c6b05b9.js",
+    "static/js/2.d6a4b075.chunk.js",
+    "static/css/main.835c8865.chunk.css",
+    "static/js/main.6bc9799d.chunk.js"
+  ]
+}
