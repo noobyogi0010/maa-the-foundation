@@ -1,0 +1,9 @@
+.heading-dash:after {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: #035f45;
+    position: absolute;
+    left: 57px;
+    bottom: 25px;
+}
