@@ -12,7 +12,7 @@ function Navbar(props: NavbarProps) {
     const [navbarOpen, setNavbarOpen] = React.useState(false);  
     return (
         <nav className={"relative flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 lg:z-50 " + (!props.props.atPageTop ? 'lg:border-b-2 lg:border-black' : "")}>
-          <div className="container mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full mx-auto flex flex-wrap items-center justify-between">
             <div className={"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8 " + (navbarOpen ? "border-b-2 border-black lg:border-none" : "")}>
               <a
                 className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"

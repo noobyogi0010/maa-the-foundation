@@ -24,7 +24,7 @@ function App() {
   });
 
   return (
-    <div className="container">
+    <div className="flex flex-col">
       <Navbar props={{atPageTop}} />
       <Main />
       <Numbers />
