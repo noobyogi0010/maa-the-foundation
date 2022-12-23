@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './navbar.css';
+import logo from '../../assets/logo/MAA-logo.svg';
 
 type NavbarProps = {
   props: {
@@ -10,15 +11,41 @@ type NavbarProps = {
 function Navbar(props: NavbarProps) {
     // const [atPageTop, setAtPageTop] = React.useState(props);
     const [navbarOpen, setNavbarOpen] = React.useState(false);  
+    const [scrollState, setScrollState] = React.useState("top");
+    let scrollListener: any = null;
+
+    useEffect(() => {
+      scrollListener = document.addEventListener("scroll", elem => {
+        let scrolled = document?.scrollingElement?.scrollTop
+        let navbar = document.querySelector("nav");
+        if (scrolled && scrolled >= 140) {
+          if (scrollState !== "scrolled") {
+            console.log(">>> Hello...", navbar);
+            navbar?.classList.add("shadow-lg");
+            setScrollState("scrolled");
+          }
+        } else {
+          if (scrollState !== "top") {
+            console.log(">>> Bye...", navbar);
+            navbar?.classList.remove("shadow-lg");
+            setScrollState("top");
+          }
+        }
+      });
+      return () => {
+        document.removeEventListener("scroll", scrollListener);
+      }
+    }, [scrollState]);
     return (
         <nav className={"relative flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 lg:z-50 " + (!props.props.atPageTop ? 'lg:border-b-2 lg:border-black' : "")}>
           <div className="w-full mx-auto flex flex-wrap items-center justify-between">
-            <div className={"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8 " + (navbarOpen ? "border-b-2 border-black lg:border-none" : "")}>
+            <div className={"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8 lg:py-1" + (navbarOpen ? "border-b-2 border-black lg:border-none" : "")}>
               <a
-                className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black"
+                className="text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-black flex items-center"
                 href="#home"
               >
-                MAA The Foundation
+                <img src={logo} alt="logo" className='hidden lg:block lg:w-20' />
+                <span className='font-bold text-2xl'>MAA The Foundation</span>
               </a>
               <button
                 className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -39,7 +66,7 @@ function Navbar(props: NavbarProps) {
             </div>
             <div
               className={
-                "lg:flex items-center bg-yellow-300 px-4 md:px-14 w-2/4 md:py-8" + 
+                "lg:flex items-center bg-yellow-300 px-4 md:px-14 w-2/4 md:py-10" + 
                 (navbarOpen ? " flex flex-grow justify-center " : " hidden justify-end")
               }
               id="navbar-danger"
@@ -50,7 +77,23 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
-                    <span className="ml-2">About Us</span>
+                    <span className="ml-2 lg:text-base">Gallery</span>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    href="#share"
+                  >
+                    <span className="ml-2 lg:text-base">News Feed</span>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a 
+                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
+                    href="#share"
+                  >
+                    <span className="ml-2 lg:text-base">About Us</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -58,7 +101,7 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#tweet"
                   >
-                    <span className="ml-2">Contact Us</span>
+                    <span className="ml-2 lg:text-base">Contact Us</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -66,8 +109,8 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black"
                     href="#pin"
                   >
-                    <span className="ml-2">
-                    <button className="bg-green-500 hover:bg-green-700 text-white uppercase text-xs font-bold py-2 px-4 rounded">
+                    <span className="ml-2 lg:text-base">
+                    <button className="bg-green-500 hover:bg-green-700 text-white uppercase font-bold py-2 px-4 rounded">
                       Donate Now
                     </button>
                     </span>

@@ -10,15 +10,15 @@ export default function Numbers() {
             </div>
             <div className="flex flex-col justify-center items-center py-8 sm:px-14 text-white">
                 <h2>15</h2>
-                <h3 className="text-center">No. of Students</h3>
+                <h3 className="text-center">No. of Areas</h3>
             </div>
             <div className="flex flex-col justify-center items-center py-8 sm:px-14 text-white">
                 <h2>15</h2>
-                <h3 className="text-center">No. of Students</h3>
+                <h3 className="text-center">Clothes Donated</h3>
             </div>
             <div className="flex flex-col justify-center items-center py-8 sm:px-14 text-white">
                 <h2>15</h2>
-                <h3 className="text-center">No. of Students</h3>
+                <h3 className="text-center">Events Organized</h3>
             </div>
         </div>
     );
