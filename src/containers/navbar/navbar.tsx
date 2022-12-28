@@ -20,13 +20,11 @@ function Navbar(props: NavbarProps) {
         let navbar = document.querySelector("nav");
         if (scrolled && scrolled >= 140) {
           if (scrollState !== "scrolled") {
-            console.log(">>> Hello...", navbar);
             navbar?.classList.add("shadow-lg");
             setScrollState("scrolled");
           }
         } else {
           if (scrollState !== "top") {
-            console.log(">>> Bye...", navbar);
             navbar?.classList.remove("shadow-lg");
             setScrollState("top");
           }
@@ -45,7 +43,7 @@ function Navbar(props: NavbarProps) {
                 href="#home"
               >
                 <img src={logo} alt="logo" className='hidden lg:block lg:w-20' />
-                <span className='font-bold text-2xl'>MAA The Foundation</span>
+                <span className='font-bold text-lg lg:text-2xl'>MAA The Foundation</span>
               </a>
               <button
                 className="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -77,7 +75,7 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
-                    <span className="ml-2 lg:text-base">Gallery</span>
+                    <span className="ml-2 lg:text-base relative link n-link">Gallery</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -85,7 +83,7 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
-                    <span className="ml-2 lg:text-base">News Feed</span>
+                    <span className="ml-2 lg:text-base relative link n-link">News Feed</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -93,7 +91,7 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#share"
                   >
-                    <span className="ml-2 lg:text-base">About Us</span>
+                    <span className="ml-2 lg:text-base relative link n-link">About Us</span>
                   </a>
                 </li>
                 <li className="nav-item">
@@ -101,7 +99,7 @@ function Navbar(props: NavbarProps) {
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                     href="#tweet"
                   >
-                    <span className="ml-2 lg:text-base">Contact Us</span>
+                    <span className="ml-2 lg:text-base relative link n-link">Contact Us</span>
                   </a>
                 </li>
                 <li className="nav-item">
