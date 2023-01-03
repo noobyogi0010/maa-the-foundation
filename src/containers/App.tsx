@@ -14,11 +14,9 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if(window.pageYOffset>0) {
-        // console.log('>>>> Bye ', atPageTop, '\n===============');
         setAtPageTop(false);
       } else {
         setAtPageTop(true);
-        // console.log('>>>> Hello ', atPageTop, '\n===============');
       }
     });
   });
