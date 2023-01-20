@@ -1,0 +1,27 @@
+name: Deploy To Github Pages
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push events but only for the "dev" branch
+  push:
+    branches: [ "dev" ]
+  # Allows manually running the github action
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps to checkout the code and build and deploy the app
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Build and deploy
+      - name: Run a multi-line script
+        run: |
+          npm install
+          npm run start
+          npx gh-pages -d build
