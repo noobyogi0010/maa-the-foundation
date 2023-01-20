@@ -6,7 +6,7 @@ import team1 from '../../assets/images/team1.jpg';
 export default function OurTeam() {
     const sectionTitle = 'Our Team';
     return (
-        <div className="flex flex-col bg-yellow-100 py-8">
+        <div id="team" className="flex flex-col bg-yellow-100 py-8">
             <SectionHeading title={sectionTitle} />
             <div className="flex flex-1 flex-col px-14 lg:flex-row">
                 <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">

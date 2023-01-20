@@ -5,7 +5,7 @@ import './main.css';
 
 function Main() {
     return (
-        <div className="flex flex-col lg:flex-row">
+        <div id="main" className="flex flex-col lg:flex-row">
             <HeaderInfoContainer />
             <HeaderImageContainer />
         </div>

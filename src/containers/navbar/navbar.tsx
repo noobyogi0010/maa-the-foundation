@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './navbar.css';
 import logo from '../../assets/logo/MAA-logo.svg';
+import { Link } from 'react-router-dom';
+import {HashLink} from "react-router-hash-link";
 
 type NavbarProps = {
   props: {
@@ -35,7 +37,7 @@ function Navbar(props: NavbarProps) {
       }
     }, [scrollState]);
     return (
-        <nav className={"relative flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 lg:z-50 " + (!props.props.atPageTop ? 'lg:border-b-2 lg:border-black' : "")}>
+        <nav className={"sticky top-0 flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 z-30 " + (!props.props.atPageTop ? 'lg:border-b-2 lg:border-black' : "")}>
           <div className="w-full mx-auto flex flex-wrap items-center justify-between">
             <div className={"w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start px-4 md:px-14 md:py-8 lg:py-1" + (navbarOpen ? "border-b-2 border-black lg:border-none" : "")}>
               <a
@@ -71,36 +73,28 @@ function Navbar(props: NavbarProps) {
             >
               <ul className="flex items-center flex-col lg:flex-row list-none lg:ml-auto">
                 <li className="nav-item">
-                  <a 
-                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
-                    href="#share"
-                  >
+                    <Link className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75" to="/gallery">
                     <span className="ml-2 lg:text-base relative link n-link">Gallery</span>
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a 
-                    className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
-                    href="#share"
-                  >
+                    <HashLink smooth to="/#news" className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75">
                     <span className="ml-2 lg:text-base relative link n-link">News Feed</span>
-                  </a>
+                    </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a 
+                <HashLink smooth to="/#about" 
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
-                    href="#share"
                   >
                     <span className="ml-2 lg:text-base relative link n-link">About Us</span>
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
-                  <a 
+                <HashLink smooth to="/#contact" 
                     className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
-                    href="#tweet"
                   >
                     <span className="ml-2 lg:text-base relative link n-link">Contact Us</span>
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="nav-item">
                   <a 
