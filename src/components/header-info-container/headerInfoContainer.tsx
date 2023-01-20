@@ -27,9 +27,11 @@ export default function HeaderInfoContainer() {
     const clickHandler = (event: React.MouseEvent) => {
         // get the label of button
         const btnText = (event?.target as HTMLElement)?.textContent;
+        console.log(btnText);
         // use button label to differentiate between different buttons
         switch (btnText) {
             case LEARN_MORE_LABEL:
+                console.log(">> Hellloooo.....")
                 setPopupTitle(LEARN_MORE_POPUP_TITLE)
                 setPopupBody(LEARN_MORE_POPUP_MARKUP);
                 setOpenPopup(true);
@@ -45,7 +47,7 @@ export default function HeaderInfoContainer() {
     }
     return (
         <div className="flex-1 flex flex-col justify-between bg-yellow-100 pt-4 lg:pt-0">
-            { openPopup ? <Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} /> : null}
+            { openPopup ? (<Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} />) : null}
             <h1 className="text-6xl lg:text-9xl font-bold px-14 capitalize flex-wrap">Charity is an act of a soft heart.</h1>
             <div className="flex py-8 px-14">
                 <p className="text-justify">Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres. </p>

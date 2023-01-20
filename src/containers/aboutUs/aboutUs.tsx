@@ -6,7 +6,7 @@ import img5 from '../../assets/images/img5.jpg';
 export default function AboutUs() {
     const sectionTitle = 'About Us';
     return (
-        <div className="flex flex-col bg-yellow-100 py-8">
+        <div id="about" className="flex flex-col bg-yellow-100 py-8">
             <SectionHeading title={sectionTitle} />
             <div className="flex flex-1 px-14">
                 {/* <div className="flex md:w-3/4"> */}
