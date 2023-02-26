@@ -1,0 +1,9 @@
+.slick-next:before {
+    color: rgba(4, 120, 87,1) !important;
+}
+.slick-prev:before {
+    color: rgba(4, 120, 87,1) !important;
+}
+.w-auto-imp {
+    width: auto !important;
+}

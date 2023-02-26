@@ -6,6 +6,7 @@ import OurMission from '../../containers/ourMission/ourMission';
 import AboutUs from '../../containers/aboutUs/aboutUs';
 import OurTeam from '../../containers/ourTeam/ourTeam';
 import ContactUs from '../../containers/contactUs/contactUs';
+import Events from '../../containers/events/events';
 
 function Home() {
     const [atPageTop, setAtPageTop] = React.useState(false);
@@ -24,6 +25,7 @@ function Home() {
             <Navbar props={{atPageTop}} />
             <Main />
             <Numbers />
+            <Events />
             <OurMission />
             <AboutUs />
             <OurTeam />
