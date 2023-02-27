@@ -5,6 +5,8 @@ on:
   # Triggers the workflow on push events but only for the "dev" branch
   push:
     branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
   # Allows manually running the github action
   workflow_dispatch:
 
@@ -12,16 +14,27 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
+    name: Build
     runs-on: ubuntu-latest
 
     # Steps to checkout the code and build and deploy the app
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
 
       # Build and deploy
-      - name: Run a multi-line script
-        run: |
-          npm install
-          npm run start
-          npx gh-pages -d build
+      - name: Install and build
+        run: npm install && npm run start
+          
+      # Deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: dev
+          folder: build
