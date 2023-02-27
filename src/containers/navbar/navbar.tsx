@@ -41,8 +41,8 @@ function Navbar(props: NavbarProps) {
         break;
     }
   };
-
   useEffect(() => {
+    // eslint-disable-next-line
     scrollListener = document.addEventListener("scroll", (elem) => {
       if (!props.props.fromGallery) {
         let scrolled = document?.scrollingElement?.scrollTop;
