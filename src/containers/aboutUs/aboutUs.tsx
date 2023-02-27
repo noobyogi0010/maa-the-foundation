@@ -2,7 +2,6 @@ import React from "react";
 import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import "./aboutUs.css";
 import img7 from "../../assets/images/img7.jpg";
-import img5 from "../../assets/images/img5.jpg";
 
 export default function AboutUs() {
   const sectionTitle = "About Us";

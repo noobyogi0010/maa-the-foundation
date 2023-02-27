@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "../../containers/navbar/navbar";
 import { ImageGallery } from "../../components/image-gallery/image-gallery";
 import ContactUs from "../../containers/contactUs/contactUs";
