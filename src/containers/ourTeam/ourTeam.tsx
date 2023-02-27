@@ -16,11 +16,11 @@ export default function OurTeam() {
     <div id="team" className="flex flex-col bg-yellow-100">
       <SectionHeading title={sectionTitle} />
 
-      <div className="w-full px-14">
-        <div className="flex font-semibold text-lg">
+      <div className="w-full">
+        <div className="flex font-semibold text-lg px-4 md:px-14">
           <div
             onClick={() => handleClick(1)}
-            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 ${
+            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 text-sm md:text-base ${
               activeTab === 1
                 ? "border-b-2 border-green-700 text-green-700"
                 : "text-gray-400"
@@ -30,7 +30,7 @@ export default function OurTeam() {
           </div>
           <div
             onClick={() => handleClick(2)}
-            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 ${
+            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 text-sm md:text-base ${
               activeTab === 2
                 ? "border-b-2 border-green-700 text-green-700"
                 : "text-gray-400"
@@ -40,7 +40,7 @@ export default function OurTeam() {
           </div>
           <div
             onClick={() => handleClick(3)}
-            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 ${
+            className={`inline-block p-4 border-b-2 border-gray-300 rounded-t-lg cursor-pointer mr-4 text-sm md:text-base ${
               activeTab === 3
                 ? "border-b-2 border-green-700 text-green-700"
                 : "text-gray-400"
@@ -49,26 +49,26 @@ export default function OurTeam() {
             Volunteers
           </div>
         </div>
-        <div className="p-6">
+        <div className="p-6 px-14">
           {activeTab === 1 && (
             <div className="flex flex-1 flex-col lg:flex-row">
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
-                <img src={team1} alt="President" className="rounded-full" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center lg:mr-6">
+                <img src={team1} alt="President" className="rounded-full w-10/12" />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
-                <img src={team1} alt="President" className="rounded-full" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center lg:mr-6">
+                <img src={team1} alt="President" className="rounded-full w-10/12" />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
-                <img src={team1} alt="President" className="rounded-full" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center lg:mr-6">
+                <img src={team1} alt="President" className="rounded-full w-10/12" />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img src={team1} alt="President" className="rounded-full w-10/12" />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
@@ -76,67 +76,115 @@ export default function OurTeam() {
           )}
           {activeTab === 2 && (
             <div className="flex flex-1 flex-col lg:flex-row flex-wrap">
-            <div className="flex flex-col mb-8 lg:mb-8 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">Founders</p>
+              <div className="flex flex-col mb-8 lg:mb-8 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">Founders</p>
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">President</p>
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">President</p>
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">President</p>
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">President</p>
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
+                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
+                <p className="text-center italic">President</p>
+              </div>
             </div>
-            <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">President</p>
-            </div>
-            <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">President</p>
-            </div>
-            <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">President</p>
-            </div>
-            <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">President</p>
-            </div>
-            <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-              <img src={team1} alt="President" className="rounded-full w-10/12" />
-              <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-              <p className="text-center italic">President</p>
-            </div>
-          </div>
           )}
           {activeTab === 3 && (
             <div className="flex flex-1 flex-col lg:flex-row flex-wrap">
-              <div className="flex flex-col mb-8 lg:mb-8 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-8 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">Volunteer</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
-              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-10/12"
+                />
                 <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
                 <p className="text-center italic">President</p>
               </div>
@@ -146,22 +194,22 @@ export default function OurTeam() {
       </div>
 
       {/* <div className="flex flex-1 flex-col px-14 lg:flex-row">
-        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
+        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center items-center lg:mr-6">
           <img src={team1} alt="President" className="rounded-full" />
           <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
           <p className="text-center italic">President</p>
         </div>
-        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
+        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center items-center lg:mr-6">
           <img src={team1} alt="President" className="rounded-full" />
           <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
           <p className="text-center italic">President</p>
         </div>
-        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 lg:mr-6">
+        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center items-center lg:mr-6">
           <img src={team1} alt="President" className="rounded-full" />
           <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
           <p className="text-center italic">President</p>
         </div>
-        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4">
+        <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center items-center">
           <img src={team1} alt="President" className="rounded-full" />
           <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
           <p className="text-center italic">President</p>

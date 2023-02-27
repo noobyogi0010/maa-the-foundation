@@ -8,6 +8,7 @@ import { Popup } from "../../components/popup/popup";
 type NavbarProps = {
   props: {
     atPageTop: boolean;
+    fromGallery?: boolean;
   };
 };
 
@@ -43,17 +44,19 @@ function Navbar(props: NavbarProps) {
 
   useEffect(() => {
     scrollListener = document.addEventListener("scroll", (elem) => {
-      let scrolled = document?.scrollingElement?.scrollTop;
-      let navbar = document.querySelector("nav");
-      if (scrolled && scrolled >= 140) {
-        if (scrollState !== "scrolled") {
-          navbar?.classList.add("shadow-lg");
-          setScrollState("scrolled");
-        }
-      } else {
-        if (scrollState !== "top") {
-          navbar?.classList.remove("shadow-lg");
-          setScrollState("top");
+      if (!props.props.fromGallery) {
+        let scrolled = document?.scrollingElement?.scrollTop;
+        let navbar = document.querySelector("nav");
+        if (scrolled && scrolled >= 140) {
+          if (scrollState !== "scrolled") {
+            navbar?.classList.add("shadow-lg");
+            setScrollState("scrolled");
+          }
+        } else {
+          if (scrollState !== "top") {
+            navbar?.classList.remove("shadow-lg");
+            setScrollState("top");
+          }
         }
       }
     });
@@ -61,14 +64,18 @@ function Navbar(props: NavbarProps) {
       document.removeEventListener("scroll", scrollListener);
     };
   }, [scrollState]);
+  console.log(">>> At Page Top => ", props.props.atPageTop);
   return (
     <nav
       className={
         "sticky top-0 flex flex-wrap items-center justify-between bg-yellow-100 border-b-2 border-black lg:border-none lg:sticky lg:top-0 z-30 " +
-        (!props.props.atPageTop ? "lg:border-b-2 lg:border-black" : "")
+        (!props.props.atPageTop ? "lg:border-b-2 lg:border-black" : "") +
+        (props.props.fromGallery ? " shadow-lg" : "")
       }
     >
-      { openPopup ? (<Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} />) : null}
+      {openPopup ? (
+        <Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} />
+      ) : null}
       <div className="w-full mx-auto flex flex-wrap items-center justify-between">
         <div
           className={
@@ -78,7 +85,7 @@ function Navbar(props: NavbarProps) {
         >
           <a
             className="text-sm font-bold leading-relaxed mr-4 py-2 whitespace-nowrap uppercase text-black flex items-center"
-            href="#home"
+            href="/"
           >
             <img src={logo} alt="logo" className="hidden lg:block lg:w-20" />
             <span className="font-bold text-lg lg:text-2xl">
@@ -134,17 +141,17 @@ function Navbar(props: NavbarProps) {
             <li className="nav-item">
               <Link
                 className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
-                to="/gallery"
+                to={props.props.fromGallery ? "/" : "/gallery"}
               >
                 <span className="ml-2 lg:text-base relative link n-link">
-                  Gallery
+                  {props.props.fromGallery ? "Home" : "Gallery"}
                 </span>
               </Link>
             </li>
             <li className="nav-item">
               <HashLink
                 smooth
-                to="/#news"
+                to="/#events"
                 className="lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
               >
                 <span className="ml-2 lg:text-base relative link n-link">
@@ -175,11 +182,14 @@ function Navbar(props: NavbarProps) {
               </HashLink>
             </li>
             <li className="nav-item lg:pl-6 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black">
-                <span className="ml-2 lg:text-base">
-                  <button className="bg-green-500 hover:bg-green-700 text-white uppercase font-bold py-2 px-4 rounded" onClick={clickHandler}>
-                    Donate Now
-                  </button>
-                </span>
+              <span className="ml-2 lg:text-base">
+                <button
+                  className="bg-green-500 hover:bg-green-700 text-white uppercase font-bold py-2 px-4 rounded"
+                  onClick={clickHandler}
+                >
+                  Donate Now
+                </button>
+              </span>
             </li>
           </ul>
         </div>

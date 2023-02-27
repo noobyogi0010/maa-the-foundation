@@ -7,6 +7,7 @@ import AboutUs from '../../containers/aboutUs/aboutUs';
 import OurTeam from '../../containers/ourTeam/ourTeam';
 import ContactUs from '../../containers/contactUs/contactUs';
 import Events from '../../containers/events/events';
+import { Footer } from '../../containers/footer/footer';
 
 function Home() {
     const [atPageTop, setAtPageTop] = React.useState(false);
@@ -30,6 +31,7 @@ function Home() {
             <AboutUs />
             <OurTeam />
             <ContactUs />
+            <Footer />
         </div>
     )
 }
