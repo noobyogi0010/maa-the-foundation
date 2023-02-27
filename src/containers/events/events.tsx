@@ -43,7 +43,7 @@ export default function Events() {
     ],
   };
   return (
-    <div id="about" className="flex flex-col bg-yellow-100 pt-8">
+    <div id="event" className="flex flex-col bg-yellow-100 pt-8">
       <SectionHeading title={sectionTitle} />
       <Slider {...settings} className="mx-14">
         <div className="m-4 w-auto-imp bg-green-700 rounded">
