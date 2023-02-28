@@ -2,6 +2,10 @@ import React from "react";
 import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import "./events.css";
 import img3 from "../../assets/images/img3.jpg";
+import img8 from "../../assets/images/img8.jpg";
+import img9 from "../../assets/images/img9.jpg";
+import img10 from "../../assets/images/img10.jpg";
+import img11 from "../../assets/images/img11.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,7 +51,7 @@ export default function Events() {
       <SectionHeading title={sectionTitle} />
       <Slider {...settings} className="mx-14">
         <div className="m-4 w-auto-imp bg-green-700 rounded">
-          <img src={img3} alt="slide1" className="rounded" />
+          <img src={img8} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
             Hello World Event
             <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
@@ -57,7 +61,7 @@ export default function Events() {
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-yellow-300 rounded">
-          <img src={img3} alt="slide1" className="rounded" />
+          <img src={img9} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-900 pt-4 pb-2 mx-4">
             Hello World Event
             <hr className="h-px mr-4 bg-gray-900 border-0 rounded-lg"></hr>
@@ -67,7 +71,7 @@ export default function Events() {
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-green-700 rounded">
-          <img src={img3} alt="slide1" className="rounded" />
+          <img src={img10} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
             Hello World Event
             <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
@@ -77,7 +81,7 @@ export default function Events() {
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-yellow-300 rounded">
-          <img src={img3} alt="slide1" className="rounded" />
+          <img src={img11} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-900 pt-4 pb-2 mx-4">
             Hello World Event
             <hr className="h-px mr-4 bg-gray-900 border-0 rounded-lg"></hr>
