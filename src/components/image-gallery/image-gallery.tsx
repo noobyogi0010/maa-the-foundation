@@ -3,12 +3,16 @@ import { ImagePopup } from "../image-popup/image-popup";
 import img3 from "../../assets/images/img3.jpg";
 import img2 from "../../assets/images/img2.jpg";
 import img4 from "../../assets/images/img4.jpg";
+import img8 from "../../assets/images/img8.jpg";
+import img9 from "../../assets/images/img9.jpg";
+import img10 from "../../assets/images/img10.jpg";
+import img11 from "../../assets/images/img11.jpg";
 
 export const ImageGallery = () => {
     const [selectedImage, setSelectedImage] = React.useState(null);
 
     const images = [
-      img3, img4,img3,img2,img3,img2 ,img4
+      img11,img10,img9,img8,img2, img4,img3,
       ];
   
     const handleImageClick = (image: any) => {
