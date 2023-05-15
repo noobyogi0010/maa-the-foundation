@@ -9,7 +9,14 @@ export default function ContactUs() {
 
   const DONATE_NOW_LABEL = "Contact Us";
   const DONATE_NOW_POPUP_TITLE = `MAA-The Foundation Contact Details`;
-  const DONATE_NOW_POPUP_MARKUP = `Phone Number: 9460692797`;
+  const DONATE_NOW_POPUP_MARKUP = `
+  <p className="text-justify text-base lg:text-lg text-black">
+      Contact Number: <strong>+91 9024712273, +91 9460692797</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      Email Address: <strong>maathefoundation@gmail.com</strong>
+  </p>
+  `;
 
   // generic click handler to open popup for both donate now and learn more
   const clickHandler = (event: React.MouseEvent) => {

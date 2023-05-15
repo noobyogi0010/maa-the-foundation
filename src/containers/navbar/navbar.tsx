@@ -23,7 +23,26 @@ function Navbar(props: NavbarProps) {
 
   const DONATE_NOW_LABEL = "Donate Now";
   const DONATE_NOW_POPUP_TITLE = `Bank Details for MAA-The Foundation`;
-  const DONATE_NOW_POPUP_MARKUP = ``;
+  const DONATE_NOW_POPUP_MARKUP = `
+  <p className="text-justify text-base lg:text-lg text-black">
+      Account Name: <strong>MAA The Foundation</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      Account Number: <strong>38470640920</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      Branch code: <strong>51416</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      IFSC Code: <strong>SBIN0051416</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      MICR: <strong>305002021</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      Branch Name: <strong>Panchsheel Nagar, Ajmer</strong>
+  </p>
+  `;
 
   // generic click handler to open popup for both donate now and learn more
   const clickHandler = (event: React.MouseEvent) => {
