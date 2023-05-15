@@ -24,7 +24,7 @@ export const Popup = (props: propsType) => {
     return (
         <div className="!bg-gray-900/50 fixed w-full h-full z-50 top-0 left-0 flex items-center justify-center backdrop-brightness-3">
             <div className="popup relative w-2/3 lg:w-2/4 px-6 py-4 bg-yellow-100 rounded-md">
-                <div className="popup-header font-bold text-lg">
+                <div className="popup-header font-bold text-2xl">
                     <h2>{props.title}</h2>
                 </div>
                 <div className="popup-body mt-4 text-base text-justify" dangerouslySetInnerHTML={createMarkup()} />

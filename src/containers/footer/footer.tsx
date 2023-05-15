@@ -4,6 +4,7 @@ export const Footer = () => {
   return (
     <div className="bg-green-900 flex flex-col items-center py-8 px-8 md:px-14 text-gray-200">
       <div className="flex flex-row">
+        <a href="https://www.instagram.com/maathefoundation" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
@@ -15,6 +16,8 @@ export const Footer = () => {
             fill="rgba(229, 231, 235)"
           />
         </svg>
+        </a>
+        <a href="https://twitter.com/MAAtheNGO" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -26,6 +29,8 @@ export const Footer = () => {
             fill="rgba(229, 231, 235)"
           />
         </svg>
+        </a>
+        <a href="https://www.facebook.com/MAAthefoundation" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
@@ -37,6 +42,7 @@ export const Footer = () => {
             fill="rgba(229, 231, 235)"
           />
         </svg>
+        </a>
       </div>
       {/* <hr className="h-px my-8 w-10/12 bg-gray-200 border-0 opacity-90 rounded-lg"></hr> */}
       <div className="flex flex-col md:flex-row mt-8">

@@ -16,7 +16,26 @@ export default function HeaderInfoContainer() {
     const LEARN_MORE_POPUP_TITLE = `Learn more about MAA-The Foundation`;
     // declare title and body markup for learn more popup 
     const DONATE_NOW_POPUP_TITLE = `Bank Details for MAA-The Foundation`;
-    const DONATE_NOW_POPUP_MARKUP = ``;
+    const DONATE_NOW_POPUP_MARKUP = `
+    <p className="text-justify text-base lg:text-lg text-black">
+        Account Name: <strong>MAA The Foundation</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        Account Number: <strong>38470640920</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        Branch code: <strong>51416</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        IFSC Code: <strong>SBIN0051416</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        MICR: <strong>305002021</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        Branch Name: <strong>Panchsheel Nagar, Ajmer</strong>
+    </p>
+    `;
 
     // declare component states
     const [openPopup, setOpenPopup] = useState(false);
@@ -31,7 +50,6 @@ export default function HeaderInfoContainer() {
         // use button label to differentiate between different buttons
         switch (btnText) {
             case LEARN_MORE_LABEL:
-                console.log(">> Hellloooo.....")
                 setPopupTitle(LEARN_MORE_POPUP_TITLE)
                 setPopupBody(LEARN_MORE_POPUP_MARKUP);
                 setOpenPopup(true);
@@ -50,7 +68,7 @@ export default function HeaderInfoContainer() {
             { openPopup ? (<Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} />) : null}
             <h1 className="text-6xl lg:text-9xl font-bold px-14 capitalize flex-wrap">Charity is an act of a soft heart.</h1>
             <div className="flex py-8 px-14">
-                <p className="text-justify">Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres zera morilet posm. Lorem ipsum koren beus on teres. </p>
+                <p className="text-justify text-base lg:text-xl">The <strong>MOVEMENT AGAISNT Aनपढ़ता Foundation</strong> is a non-profit organisation headquartered in <strong>AJMER, RAJASTHAN, INDIA</strong>. MAA the foundation aims for Upliftment of children hailing from socio-economically challenging backgrounds. </p>
             </div>
             <div className="flex py-8 px-14 items-center justify-between sm:justify-center lg:justify-start">
                 <button id="donate-now-header" className="bg-green-500 hover:bg-green-700 text-white font-medium rounded text-base lg:text-xl capitalize px-4 py-2 lg:p-6" onClick={clickHandler}>
