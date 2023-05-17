@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import "./ourTeam.css";
 import team1 from "../../assets/images/team1.jpg";
+import team2 from "../../assets/images/team2.jpg";
 
 export default function OurTeam() {
   const sectionTitle = "Our Team";
@@ -58,9 +59,9 @@ export default function OurTeam() {
                 <p className="text-center italic">President</p>
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center lg:mr-6">
-                <img src={team1} alt="President" className="rounded-full w-10/12" />
-                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-                <p className="text-center italic">President</p>
+                <img src={team2} alt="President" className="rounded-full w-10/12" />
+                <h4 className="text-center py-1 font-bold">Chandrakala Ranga</h4>
+                <p className="text-center italic">Mother of President</p>
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center lg:mr-6">
                 <img src={team1} alt="President" className="rounded-full w-10/12" />
@@ -87,12 +88,12 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
                 <img
-                  src={team1}
+                  src={team2}
                   alt="President"
                   className="rounded-full w-10/12"
                 />
-                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-                <p className="text-center italic">President</p>
+                <h4 className="text-center py-1 font-bold">Chandrakala Ranga</h4>
+                <p className="text-center italic">Mother of President</p>
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
                 <img
@@ -145,12 +146,12 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
                 <img
-                  src={team1}
+                  src={team2}
                   alt="President"
                   className="rounded-full w-10/12"
                 />
-                <h4 className="text-center py-1 font-bold">Ankit Ranga</h4>
-                <p className="text-center italic">President</p>
+                <h4 className="text-center py-1 font-bold">Chandrakala Ranga</h4>
+                <p className="text-center italic">Mother of President</p>
               </div>
               <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
                 <img
