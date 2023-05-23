@@ -56,7 +56,7 @@ export const Footer = () => {
           </span>
         </p>
         <p className="px-4 mb-4 md:mb-0">
-          Registration No: <span className="font-bold">AJMER/COOPS/007</span>
+          Registration No: <span className="font-bold">COOP/2018/AJMER/100956</span>
         </p>
       </div>
       <hr className="h-1 my-8 w-1/2 bg-gray-200 border-0 opacity-90 rounded-lg"></hr>
