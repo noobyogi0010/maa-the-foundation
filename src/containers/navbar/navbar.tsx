@@ -83,7 +83,6 @@ function Navbar(props: NavbarProps) {
       document.removeEventListener("scroll", scrollListener);
     };
   }, [scrollState]);
-  console.log(">>> At Page Top => ", props.props.atPageTop);
   return (
     <nav
       className={

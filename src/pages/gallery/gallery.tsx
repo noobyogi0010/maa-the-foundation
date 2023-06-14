@@ -5,6 +5,15 @@ import ContactUs from "../../containers/contactUs/contactUs";
 import { Footer } from "../../containers/footer/footer";
 
 function Gallery() {
+  
+  React.useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
+
   return (
     <div className="flex flex-col">
       <Navbar props={{ atPageTop: false, fromGallery: true }} />
