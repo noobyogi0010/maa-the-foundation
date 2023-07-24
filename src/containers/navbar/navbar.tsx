@@ -4,6 +4,7 @@ import logo from "../../assets/logo/MAA-logo.svg";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Popup } from "../../components/popup/popup";
+import img from "../../assets/payments/qr-code.png"
 
 type NavbarProps = {
   props: {
@@ -42,6 +43,13 @@ function Navbar(props: NavbarProps) {
   <p className="text-justify text-base lg:text-lg text-black">
       Branch Name: <strong>Panchsheel Nagar, Ajmer</strong>
   </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      UPI ID: <strong>38470640920@sbi</strong>
+  </p>
+  <p className="text-justify text-base lg:text-lg text-black">
+      QR Code: 
+  </p>
+  <img src=${img} alt="QR Code" />
   `;
 
   // generic click handler to open popup for both donate now and learn more
