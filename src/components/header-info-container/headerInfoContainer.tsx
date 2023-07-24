@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SocialLinks from "../social-links/socialLinks";
 import './headerInfoContainer.css';
 import { Popup } from "../popup/popup";
+import img from "../../assets/payments/qr-code.png"
 
 export default function HeaderInfoContainer() {
     // declare consts for button labels
@@ -35,6 +36,13 @@ export default function HeaderInfoContainer() {
     <p className="text-justify text-base lg:text-lg text-black">
         Branch Name: <strong>Panchsheel Nagar, Ajmer</strong>
     </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        UPI ID: <strong>38470640920@sbi</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
+        QR Code: 
+    </p>
+    <img src=${img} alt="QR Code" />
     `;
 
     // declare component states
