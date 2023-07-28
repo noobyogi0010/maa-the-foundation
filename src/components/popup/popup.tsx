@@ -27,7 +27,7 @@ export const Popup = (props: propsType) => {
                 <div className="popup-header font-bold text-2xl">
                     <h2>{props.title}</h2>
                 </div>
-                <div className="popup-body mt-4 text-base text-justify h-3/4 overflow-y-scroll p-2" dangerouslySetInnerHTML={createMarkup()} />
+                <div className="popup-body mt-4 text-base text-justify h-4/6 md:h-5/6 overflow-y-scroll p-2" dangerouslySetInnerHTML={createMarkup()} />
                 <div className="popup-footer mt-4 flex justify-end">
                     <button onClick={clickHandler} className="bg-green-500 hover:bg-green-700 text-white font-medium rounded text-base capitalize px-4 py-2">Close</button>
                 </div>
