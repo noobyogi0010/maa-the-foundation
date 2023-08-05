@@ -218,6 +218,15 @@ export default function OurTeam() {
                   alt="President"
                   className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
                 />
+                <h4 className="text-center py-1 font-bold">Sourabh Chhangani</h4>
+                {/* <p className="text-center italic">Founder</p> */}
+              </div>
+              <div className="flex flex-col mb-8 lg:mb-0 lg:w-1/4 items-center">
+                <img
+                  src={team1}
+                  alt="President"
+                  className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
+                />
                 <h4 className="text-center py-1 font-bold">Yogesh Singh</h4>
                 {/* <p className="text-center italic">Founder</p> */}
               </div>
