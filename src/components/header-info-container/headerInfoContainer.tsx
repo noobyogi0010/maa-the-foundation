@@ -11,7 +11,30 @@ export default function HeaderInfoContainer() {
     // declare title and body markup for learn more popup 
     const LEARN_MORE_POPUP_MARKUP = `
     <p className="text-justify text-base lg:text-lg text-black">
-        This is a placeholder for the works of magic that MAA-The Foundation do and is. Please stay tuned to learn more about us.
+    <strong>Mission and Vision:</strong><br/>
+    The Movement Against Aनपढ़ता is a voluntary organization with a profound mission to improve the lives of underprivileged communities, encompassing both rural and urban areas. Founded in March 2018 by Ankit Ranga, the organization was born out of a vision to uplift underprivileged children, adults, and communities, and to create a positive impact on society. The central tenet of the organization is to provide education and basic literacy to individuals regardless of their economic conditions.<br/><br/>
+    
+    <strong>Founder's Inspiration:</strong><br/>
+    Ankit Ranga, the visionary behind the Movement Against Aनपढ़ता, firmly believes in the intrinsic right of every individual to access education and acquire basic literacy skills. Regardless of economic disparities, he envisions a world where educational opportunities are accessible to all, helping to break the cycle of poverty and ignorance. Furthermore, Ankit's desire to give back to society, coupled with his passion to make a difference in the world, laid the foundation for this transformative organization.<br/><br/>
+    
+    <strong>Approach and Activities:</strong><br/>
+    Since its establishment, the Movement Against Aनपढ़ता has been working relentlessly to bridge the educational gap in underprivileged communities. Despite not having legal certification or registration, the organization has been proactive in implementing a range of initiatives to achieve its objectives. Some of the key activities include:<br/><br/>
+    
+    Education Outreach Programs: The NGO conducts various educational outreach programs to provide basic literacy skills to children and adults who lack access to formal education. Volunteers and educators work together to design engaging and informative curricula that cater to the specific needs of the target communities.<br/><br/>
+    
+    Empowerment Projects: The organization runs empowerment projects that focus on skill development, vocational training, and entrepreneurship. These initiatives aim to equip individuals with the necessary tools to enhance their employability and self-sufficiency.<br/><br/>
+    
+    Community Development: Recognizing the importance of holistic development, the NGO engages in community-based projects that focus on improving healthcare, sanitation, and other vital infrastructure, thus enhancing the overall quality of life.<br/><br/>
+    
+    Gurukul for Underprivileged Students: One of the most ambitious visions of the organization is to establish an Gurukul, a residential educational institution, where students from low-economic backgrounds can reside and learn. This Gurukul will not only provide them with formal education but also offer life skills, moral values, and personal development, nurturing well-rounded individuals ready to contribute positively to society.<br/><br/>
+    
+    Advocacy and Awareness: The Movement Against Aनपढ़ता actively advocates for the right to education and raises awareness about the challenges faced by underprivileged communities. By engaging with the public and policymakers, the organization strives to create a more inclusive and equitable educational system.<br/><br/>
+    
+    <strong>Impact and Achievements:</strong><br/>
+    Though relatively young, the Movement Against Aनपढ़ता has already made a significant impact on the lives of numerous individuals. By providing educational opportunities and empowering underprivileged communities, the NGO has witnessed positive changes, such as increased literacy rates, enhanced livelihoods, and strengthened community bonds. Moreover, the organization's passion for its mission has inspired many volunteers and donors to join hands and support the cause.<br/><br/>
+    
+    <strong>Future Outlook:</strong><br/>
+    As the Movement Against Aनपढ़ता moves forward, it envisions expanding its reach and impact, extending its educational and empowerment initiatives to more underserved regions. The establishment of the Gurukul remains a key goal, and the organization actively seeks partnerships and collaborations to realize this dream. Through continuous efforts and unwavering dedication, the NGO strives to create a society where education is a universal right, enabling individuals to break free from the shackles of illiteracy and poverty.
     </p>
     `;
     const LEARN_MORE_POPUP_TITLE = `Learn more about MAA-The Foundation`;
