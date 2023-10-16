@@ -19,6 +19,8 @@ import team12 from "../../assets/team/team12.png";
 import team13 from "../../assets/team/team13.png";
 import team14 from "../../assets/team/team14.png";
 import team15 from "../../assets/team/team15.png";
+import team16 from "../../assets/team/team16.png";
+import team17 from "../../assets/team/team17.png";
 
 export default function OurTeam() {
   const sectionTitle = "Our Team";
@@ -127,7 +129,7 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-4 lg:w-1/4 items-center">
                 <img
-                  src={avataar}
+                  src={team16}
                   alt="President"
                   className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
                 />
@@ -154,7 +156,7 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-4 lg:w-1/4 items-center">
                 <img
-                  src={avataar}
+                  src={team17}
                   alt="President"
                   className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
                 />
@@ -194,7 +196,7 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-4 lg:w-1/4 items-center">
                 <img
-                  src={avataar}
+                  src={team16}
                   alt="President"
                   className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
                 />
@@ -221,7 +223,7 @@ export default function OurTeam() {
               </div>
               <div className="flex flex-col mb-8 lg:mb-4 lg:w-1/4 items-center">
                 <img
-                  src={avataar}
+                  src={team17}
                   alt="President"
                   className="rounded-full w-2/6 lg:w-10/12 content-around lg:content-normal"
                 />
