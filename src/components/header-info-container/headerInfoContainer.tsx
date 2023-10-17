@@ -63,6 +63,9 @@ export default function HeaderInfoContainer() {
         UPI ID: <strong>38470640920@sbi</strong>
     </p>
     <p className="text-justify text-base lg:text-lg text-black">
+        80G Registration Number: <strong>AAJAM0166HF20231</strong>
+    </p>
+    <p className="text-justify text-base lg:text-lg text-black">
         QR Code: 
     </p>
     <img src=${img} alt="QR Code" />
