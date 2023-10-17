@@ -59,6 +59,20 @@ export const Footer = () => {
           Registration No: <span className="font-bold">COOP/2018/AJMER/100956</span>
         </p>
       </div>
+      <div className="flex flex-col md:flex-row mt-8">
+        <p className="px-4 mb-4 md:mb-0">
+          80G Registration Number: <span className="font-bold">AAJAM0166HF20231</span>
+        </p>
+        <p className="px-4 mb-4 md:mb-0">
+          DARPAN (NITI Aayog, Central Government) Registration No:{" "}
+          <span className="font-bold">
+            RJ/2023/0356333
+          </span>
+        </p>
+        <p className="px-4 mb-4 md:mb-0">
+          VOLUNTARY SECTOR DEVELOPMENT CENTRE (Govt. of Rajasthan) Registration No: <span className="font-bold">VSDC/2023/JAIPUR/1023</span>
+        </p>
+      </div>
       <hr className="h-1 my-8 w-1/2 bg-gray-200 border-0 opacity-90 rounded-lg"></hr>
       <p className="flex items-center">
         <svg

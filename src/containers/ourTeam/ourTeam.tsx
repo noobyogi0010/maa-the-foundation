@@ -3,7 +3,6 @@ import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import "./ourTeam.css";
 import founder from "../../assets/images/team1.jpg";
 import coFounder from "../../assets/images/team2.jpg";
-import avataar from "../../assets/images/avatar.svg";
 import team1 from "../../assets/team/team1.png";
 import team2 from "../../assets/team/team2.png";
 import team3 from "../../assets/team/team3.png";
