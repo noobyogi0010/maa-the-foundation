@@ -1,10 +1,11 @@
 import React from "react";
 import SectionHeading from "../../components/sectionHeading/sectionHeading";
 import "./events.css";
-import img3 from "../../assets/images/img3.jpg";
-import img8 from "../../assets/images/img8.jpg";
-import img9 from "../../assets/images/img9.jpg";
-import img10 from "../../assets/images/img10.jpg";
+import img50 from "../../assets/images/img50.jpg";
+import img52 from "../../assets/images/img52.jpeg";
+import img53 from "../../assets/images/img53.jpg";
+import img54 from "../../assets/images/img54.jpg";
+import img56 from "../../assets/images/img56.jpg";
 import img11 from "../../assets/images/img11.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -51,53 +52,63 @@ export default function Events() {
       <SectionHeading title={sectionTitle} />
       <Slider {...settings} className="mx-14">
         <div className="m-4 w-auto-imp bg-green-700 rounded">
-          <img src={img8} alt="slide1" className="rounded" />
+          <img src={img56} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
-            Hello World Event
+            Republic Day 2024 Celebration
             <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
           </h2>
           <p className="text-base text-gray-100 mx-4 pb-4 opacity-90">
-            We are going to show events and news here.
-          </p>
-        </div>
-        <div className="m-4 w-auto-imp bg-yellow-300 rounded">
-          <img src={img9} alt="slide1" className="rounded" />
-          <h2 className="text-lg font-semibold text-gray-900 pt-4 pb-2 mx-4">
-            Hello World Event
-            <hr className="h-px mr-4 bg-gray-900 border-0 rounded-lg"></hr>
-          </h2>
-          <p className="text-base text-gray-900 mx-4 pb-4 opacity-90">
-            We are going to show events and news here.
+            Come join our students in flag hoisting ceremany for this Republic Day!
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-green-700 rounded">
-          <img src={img10} alt="slide1" className="rounded" />
+          <img src={img50} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
-            Hello World Event
+            Diwali Celebration 2023
             <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
           </h2>
           <p className="text-base text-gray-100 mx-4 pb-4 opacity-90">
-            We are going to show events and news here.
+            We celebrated this year's Diwali with all our lovely students by sharing lots of laughters and delicious sweets.
+          </p>
+        </div>
+        <div className="m-4 w-auto-imp bg-yellow-300 rounded">
+          <img src={img52} alt="slide1" className="rounded" />
+          <h2 className="text-lg font-semibold text-gray-900 pt-4 pb-2 mx-4">
+            Distribution of Uniform 2023
+            <hr className="h-px mr-4 bg-gray-900 border-0 rounded-lg"></hr>
+          </h2>
+          <p className="text-base text-gray-900 mx-4 pb-4 opacity-90">
+            Our volunteers conducted a drive to distribute our newly designed uniforms to all of our lovely kids.
+          </p>
+        </div>
+        <div className="m-4 w-auto-imp bg-green-700 rounded">
+          <img src={img53} alt="slide1" className="rounded" />
+          <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
+            15th August 2023 Celebration
+            <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
+          </h2>
+          <p className="text-base text-gray-100 mx-4 pb-4 opacity-90">
+            As our NGO's core tradition we celebrated Independence Day by hoisting the national flag and playing games with all the students. 
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-yellow-300 rounded">
           <img src={img11} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-900 pt-4 pb-2 mx-4">
-            Hello World Event
+            Winter Trip 2023
             <hr className="h-px mr-4 bg-gray-900 border-0 rounded-lg"></hr>
           </h2>
           <p className="text-base text-gray-900 mx-4 pb-4 opacity-90">
-            We are going to show events and news here.
+            We never let the fun stop, so we took a batch of our students for an educational trip!
           </p>
         </div>
         <div className="m-4 w-auto-imp bg-green-700 rounded">
-          <img src={img3} alt="slide1" className="rounded" />
+          <img src={img54} alt="slide1" className="rounded" />
           <h2 className="text-lg font-semibold text-gray-100 pt-4 pb-2 mx-4">
-            Hello World Event
+            Winter Skill Classes 2023
             <hr className="h-px mr-4 bg-gray-100 border-0 rounded-lg"></hr>
           </h2>
           <p className="text-base text-gray-100 mx-4 pb-4 opacity-90">
-            We are going to show events and news here.
+            2 week winter classes for all our students to learn about music, dance, acting, pottery, yoga and drawing.
           </p>
         </div>
       </Slider>
