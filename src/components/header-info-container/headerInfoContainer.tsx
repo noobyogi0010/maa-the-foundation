@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SocialLinks from "../social-links/socialLinks";
 import './headerInfoContainer.css';
 import { Popup } from "../popup/popup";
-import img from "../../assets/payments/qr-code.png"
+import img from "../../assets/payments/qr-code.jpeg"
 
 export default function HeaderInfoContainer() {
     // declare consts for button labels

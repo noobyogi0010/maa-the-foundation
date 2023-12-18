@@ -38,7 +38,7 @@ export default function ContactUs() {
   return (
     <div id="contact" className="flex px-14 py-8 background shadow-lg">
       {openPopup ? (
-        <Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} />
+        <Popup title={popupTitle} body={popupBody} setIsOpen={setOpenPopup} height="fit-content" />
       ) : null}
       <h4 className="text-4xl text-white md:w-2/3">Looking for some help?</h4>
       <div className="flex justify-center md:justify-end md:w-1/3 items-center">

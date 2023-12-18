@@ -4,7 +4,7 @@ import logo from "../../assets/logo/MAA-logo.svg";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Popup } from "../../components/popup/popup";
-import img from "../../assets/payments/qr-code.png"
+import img from "../../assets/payments/qr-code.jpeg"
 
 type NavbarProps = {
   props: {
