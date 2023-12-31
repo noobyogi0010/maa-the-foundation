@@ -1,7 +1,8 @@
 {
   "name": "maa-the-foundation",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://maathefoundation.org/",
   "dependencies": {
     "@craco/craco": "^6.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
